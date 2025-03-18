@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => {
     return {
         base: '/portfolio/', // Add this line
         plugins: [
-            react(),
+            react({
+                jsxRuntime: 'classic'
+            }),
             envPlugin(),
             devServerPlugin(),
             sourcemapPlugin(),
