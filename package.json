@@ -8,8 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && npm run fix-gh-pages",
+    "deploy": "gh-pages -d dist",
+    "fix-gh-pages": "node scripts/fix-gh-pages.js"
   },
   "dependencies": {
     "aos": "^2.3.4",
