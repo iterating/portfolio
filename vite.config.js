@@ -28,44 +28,48 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react({
-        // Ensure JSX is correctly transpiled
-        include: '**/*.{jsx,tsx}',
-        babel: {
-          plugins: [
-            ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]
-          ]
-        }
+        jsxRuntime: 'automatic'
       })
     ],
     base: mode === 'production' ? base : '/',
     build: {
       outDir: 'dist',
       sourcemap: true,
-      // Ensure correct MIME types
       rollupOptions: {
+        input: {
+          main: 'index.html',
+        },
         output: {
-          // Ensure correct chunks and filenames
-          chunkFileNames: 'assets/js/[name]-[hash].js',
-          entryFileNames: 'assets/js/[name]-[hash].js',
-          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
-          // Ensure JSX is treated as JavaScript
-          manualChunks(id) {
-            if (id.includes('node_modules')) {
-              return 'vendor';
-            }
-          }
+          // Force .jsx files to be treated as .js
+          entryFileNames: 'assets/[name].[hash].js',
+          chunkFileNames: 'assets/[name].[hash].js',
+          assetFileNames: 'assets/[name].[hash].[ext]'
         }
       }
     },
-    // Serve all JSX files with the correct MIME type
-    server: {
-      headers: {
-        'Content-Type': 'application/javascript'
-      }
-    },
-    // Ensure Vite knows how to resolve .jsx files
     resolve: {
-      extensions: ['.js', '.jsx', '.ts', '.tsx']
+      extensions: ['.js', '.jsx', '.json']
+    },
+    esbuild: {
+      loader: 'jsx',
+      include: /src\/.*\.jsx?$/,
+      exclude: [],
+    },
+    optimizeDeps: {
+      esbuildOptions: {
+        plugins: [
+          {
+            name: 'jsx-loader',
+            setup(build) {
+              build.onLoad({ filter: /\.jsx$/ }, async (args) => {
+                return {
+                  loader: 'jsx',
+                }
+              })
+            }
+          }
+        ]
+      }
     }
   };
 });
