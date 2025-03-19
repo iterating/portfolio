@@ -20,22 +20,5 @@ export default defineConfig({
   // Override Vite's default asset handling
   resolve: {
     extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json'] 
-  },
-  // Force Vite to treat .jsx files as JavaScript in development
-  esbuild: {
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment',
-    loader: {
-      '.js': 'jsx',
-      '.jsx': 'jsx'
-    }
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        '.js': 'jsx',
-        '.jsx': 'jsx'
-      }
-    }
   }
 });
