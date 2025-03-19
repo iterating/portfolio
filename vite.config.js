@@ -26,50 +26,48 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    plugins: [
-      react({
-        jsxRuntime: 'automatic'
-      })
-    ],
+    plugins: [react()],
     base: mode === 'production' ? base : '/',
+    
+    // Special configuration for JSX files
     build: {
       outDir: 'dist',
       sourcemap: true,
+      assetsDir: 'assets',
+      // Force JSX files to be processed as JS
       rollupOptions: {
-        input: {
-          main: 'index.html',
-        },
+        input: 'index.html',
         output: {
-          // Force .jsx files to be treated as .js
-          entryFileNames: 'assets/[name].[hash].js',
-          chunkFileNames: 'assets/[name].[hash].js',
-          assetFileNames: 'assets/[name].[hash].[ext]'
+          format: 'es',
+          // Use .js extension for all output files
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: ({name}) => {
+            // Put CSS files in their own directory
+            if (/\.css$/.test(name ?? '')) {
+              return 'assets/css/[name]-[hash][extname]';
+            }
+            // Put image files in their own directory
+            if (/\.(png|jpe?g|gif|svg|webp|ico)$/.test(name ?? '')) {
+              return 'assets/img/[name]-[hash][extname]';
+            }
+            // Default
+            return 'assets/[name]-[hash][extname]';
+          }
         }
       }
     },
+    
+    // Ensure correct file resolution
     resolve: {
-      extensions: ['.js', '.jsx', '.json']
+      extensions: ['.mjs', '.js', '.jsx', '.ts', '.tsx', '.json']
     },
-    esbuild: {
-      loader: 'jsx',
-      include: /src\/.*\.jsx?$/,
-      exclude: [],
-    },
-    optimizeDeps: {
-      esbuildOptions: {
-        plugins: [
-          {
-            name: 'jsx-loader',
-            setup(build) {
-              build.onLoad({ filter: /\.jsx$/ }, async (args) => {
-                return {
-                  loader: 'jsx',
-                }
-              })
-            }
-          }
-        ]
-      }
+    
+    // Development server configuration
+    server: {
+      port: 3000,
+      strictPort: true,
+      open: true
     }
   };
 });
