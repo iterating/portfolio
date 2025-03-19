@@ -26,11 +26,46 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    plugins: [react()],
+    plugins: [
+      react({
+        // Ensure JSX is correctly transpiled
+        include: '**/*.{jsx,tsx}',
+        babel: {
+          plugins: [
+            ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]
+          ]
+        }
+      })
+    ],
     base: mode === 'production' ? base : '/',
     build: {
       outDir: 'dist',
-      sourcemap: true
+      sourcemap: true,
+      // Ensure correct MIME types
+      rollupOptions: {
+        output: {
+          // Ensure correct chunks and filenames
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+          // Ensure JSX is treated as JavaScript
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          }
+        }
+      }
+    },
+    // Serve all JSX files with the correct MIME type
+    server: {
+      headers: {
+        'Content-Type': 'application/javascript'
+      }
+    },
+    // Ensure Vite knows how to resolve .jsx files
+    resolve: {
+      extensions: ['.js', '.jsx', '.ts', '.tsx']
     }
   };
 });
