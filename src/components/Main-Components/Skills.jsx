@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { config } from '../../config'
 
 export default function Skills() {
     useEffect(()=>{
@@ -21,7 +22,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-right'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/figma.png" alt="Figma"/>
+                                    <img src={config.getAssetPath('assets/images/figma.png')} alt="Figma"/>
                                     <h1 className="percent">92%</h1>
                                 </div>
                                 <p className="name">JavaScript</p>
@@ -30,7 +31,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-up'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/framer.png" alt="Framer"/>
+                                    <img src={config.getAssetPath('assets/images/framer.png')} alt="Framer"/>
                                     <h1 className="percent">85%</h1>
                                 </div>
                                 <p className="name">Framer</p>
@@ -39,7 +40,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-down'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/webflow.png" alt="Webflow"/>
+                                    <img src={config.getAssetPath('assets/images/webflow.png')} alt="Webflow"/>
                                     <h1 className="percent">80%</h1>
                                 </div>
                                 <p className="name">Webflow</p>
@@ -48,7 +49,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-left'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/react.png" alt="React"/>
+                                    <img src={config.getAssetPath('assets/images/react.png')} alt="React"/>
                                     <h1 className="percent">90%</h1>
                                 </div>
                                 <p className="name">React</p>
@@ -57,7 +58,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-right'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/wordpress.png" alt="WordPress"/>
+                                    <img src={config.getAssetPath('assets/images/wordpress.png')} alt="WordPress"/>
                                     <h1 className="percent">86%</h1>
                                 </div>
                                 <p className="name">WordPress</p>
@@ -66,7 +67,7 @@ export default function Skills() {
                         <div className="col-md-3 scroll-animation" data-aos='fade-up'>
                             <div className="skill">
                                 <div className="skill-inner">
-                                    <img src="../assets/images/laravel.png" alt="Laravel/PHP"/>
+                                    <img src={config.getAssetPath('assets/images/laravel.png')} alt="Laravel/PHP"/>
                                     <h1 className="percent">70%</h1>
                                 </div>
                                 <p className="name">Laravel/PHP</p>
