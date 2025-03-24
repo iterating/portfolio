@@ -21,6 +21,13 @@ export const config = {
   getAssetPath: (path) => {
     // Remove leading slash if present to avoid double slashes
     const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+    
+    // Handle the specific case where assets are in /assets/images directly
+    if (cleanPath.startsWith('assets/')) {
+      return `${config.basePath}/${cleanPath}`;
+    }
+    
+    // For any other path, append to the base path
     return `${config.basePath}/${cleanPath}`;
   }
 };

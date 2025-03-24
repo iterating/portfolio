@@ -42,7 +42,7 @@ export default function Lsb() {
       </a>
       <br />
       <a
-        href="./assets/jonathanyoung.cv.tech.pdf"
+        href={config.getAssetPath('assets/jonathanyoung.cv.tech.pdf')}
         className="theme-btn"
         style={{ marginBottom: '5px' }}
       >

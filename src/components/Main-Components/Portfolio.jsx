@@ -224,7 +224,7 @@ export default function Portfolio() {
                     href="../assets/images/portfolio5.jpg"
                     data-lightbox="example-1"
                   > */}
-                  <img src={config.getAssetPath('assets/images/portfoio.tableaucleaner.screenshot.png')} alt="portfolio" />
+                  <img src={config.getAssetPath('assets/images/portfolio.tableaucleaner.screenshot.png')} alt="portfolio" />
                   {/* </a> */}
 
                   <ul className="portfolio-categories">

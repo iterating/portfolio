@@ -104,10 +104,8 @@ export function initPathFixer() {
     fixImagePaths();
   }
   
-  // Also run when route changes for SPA
-  window.addEventListener('popstate', fixImagePaths);
-  
-  return true;
+  // Also run when dynamic content might be loaded
+  window.addEventListener('load', fixImagePaths);
 }
 
 export default { fixImagePaths, initPathFixer };

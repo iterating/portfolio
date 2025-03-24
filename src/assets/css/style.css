@@ -1,4 +1,3 @@
-
 /* 
     -- Table of Content --
 
@@ -841,8 +840,6 @@ body .body-overlay {
 .home5-page .body-overlay {
     opacity: 0.3;
 }
-
-
 
 /* 10 - About */
 .about-area {
@@ -1885,7 +1882,7 @@ body .body-overlay {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url('../images/bg-shape.png') center no-repeat;
+    background: url('/assets/images/bg-shape.png') center no-repeat;
     background-size: cover;
     opacity: 0.4;
 }
