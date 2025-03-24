@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { pricingData } from '../../data/pricingData'
 
 export default function Pricing() {
     useEffect(()=>{
@@ -12,64 +13,47 @@ export default function Pricing() {
                 <div className="pricing-content content-width">
                     <div className="section-header">
                         <h4 className="subtitle scroll-animation" data-aos='fade-up'>
-                            <i className="las la-dollar-sign"></i> pricing
+                            <i className="las la-dollar-sign"></i> {pricingData.sectionTitle}
                         </h4>
-                        <h1 className="scroll-animation" data-aos='fade-up'>My <span>Pricing</span></h1>
+                        <h1 className="scroll-animation" data-aos='fade-up'>{pricingData.sectionHeading} <span>{pricingData.sectionHeadingSpan}</span></h1>
                     </div>
 
                     <div className="pricing-table-items">
                         <div className="row">
-                            <div className="col-md-6 scroll-animation"  data-aos='fade-up'>
-                                <div className="pricing-table">
-                                    <div className="pricing-table-header">
-                                        <div className="top d-flex justify-content-between align-items-start">
-                                            <h4>basic</h4>
-                                            <p className="text-right">Have design ready to build?<br/>
-                                                or small budget</p>
+                            {pricingData.packages.map((pkg, index) => (
+                                <div className="col-md-6 scroll-animation" data-aos={index === 0 ? 'fade-up' : 'fade-left'} key={pkg.id}>
+                                    <div className="pricing-table">
+                                        <div className="pricing-table-header">
+                                            <div className="top d-flex justify-content-between align-items-start">
+                                                <h4>{pkg.type}</h4>
+                                                <p className="text-right">{pkg.description.split('\n').map((line, i) => (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        {i < pkg.description.split('\n').length - 1 && <br />}
+                                                    </React.Fragment>
+                                                ))}</p>
+                                            </div>
+                                            <h1>{pkg.price} <span>{pkg.unit}</span></h1>
                                         </div>
-                                        <h1>$49 <span>/ hours</span></h1>
+                                        <ul className="feature-lists">
+                                            {pkg.features.map((feature, i) => (
+                                                <li key={i}>{feature}</li>
+                                            ))}
+                                        </ul>
+                                        <a href={pkg.ctaLink} className="theme-btn">{pkg.ctaText}</a>
                                     </div>
-                                    <ul className="feature-lists">
-                                        <li>Need your wireframe</li>
-                                        <li>Design with Figma, Framer</li>
-                                        <li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
-                                        <li>Remote/Online</li>
-                                        <li>Work in business days, no weekend.</li>
-                                        <li>Support 6 months</li>
-                                    </ul>
-                                    <a href="" className="theme-btn">pick this package</a>
                                 </div>
-                            </div>
-                            <div className="col-md-6 scroll-animation" data-aos='fade-left'>
-                                <div className="pricing-table">
-                                    <div className="pricing-table-header">
-                                        <div className="top d-flex justify-content-between align-items-start">
-                                            <h4>premium</h4>
-                                            <p className="text-right">Not have any design?<br/>
-                                                Leave its for me</p>
-                                        </div>
-                                        <h1>$99 <span>/ hours</span></h1>
-                                    </div>
-                                    <ul className="feature-lists">
-                                        <li>Don't need wireframe or anything</li>
-                                        <li>Design with Figma, Framer from scratch</li>
-                                        <li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
-                                        <li>Remote/Online</li>
-                                        <li>Work with both weekend</li>
-                                        <li>Support 12 months</li>
-                                        <li>Your project alway be priority</li>
-                                        <li>Customer care gifts</li>
-                                    </ul>
-                                    <a href="" className="theme-btn">pick this package</a>
-                                </div>
-                            </div>
+                            ))}
                         </div>
-                        <p className="info scroll-animation"  data-aos='fade-up'>
-                            Don't find any package match with your plan!<br/>
-                            Want to setup a new tailor-made package for only you?. <a href="">Contact Us</a>
+                        <p className="info scroll-animation" data-aos='fade-up'>
+                            {pricingData.contactInfo.text.split('\n').map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line}
+                                    {i < pricingData.contactInfo.text.split('\n').length - 1 && <br />}
+                                </React.Fragment>
+                            ))} <a href={pricingData.contactInfo.linkUrl}>{pricingData.contactInfo.linkText}</a>
                         </p>
                     </div>
-
                 </div>
             </div>
     </section>
