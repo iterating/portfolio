@@ -1,6 +1,6 @@
-import './assets/css/bootstrap.min.css'
-import './css/App.css'
-import './css/responsive.css'
+import './assets/styles/bootstrap.min.css'
+import './styles/App.css'
+import './styles/responsive.css'
 import React from 'react'
 import Global from './components/Global'
 

@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import LazyImage from '../Global-content/LazyImage';
 import { config } from '../../config';
 // import Lightbox from 'lightbox2';
 // import 'lightbox2/dist/css/lightbox.min.css';
@@ -43,6 +44,7 @@ export default function Portfolio() {
                     <img
                       src={config.getAssetPath('assets/images/portfolio.FilmLab.kiosk.png')}
                       alt="LA Film Lab Ordering System"
+                      loading="lazy"
                     />
                   </a>
 
@@ -76,6 +78,7 @@ export default function Portfolio() {
                     <img
                       src={config.getAssetPath('assets/images/portfolio.medicalc.screenshot.clean.png')}
                       alt="Medical Decision Tools"
+                      loading="lazy"
                     />
                   </a>
 
@@ -103,8 +106,10 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-right">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
-                  <a href={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} data-lightbox="example-1">
-                  <img src={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} alt="Placenotes"  />
+                  <a href={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} data-lightbox="example-1" loading="lazy">
+                  <img src={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} alt="Placenotes" 
+                  loading="lazy"
+                  />
                   </a>
 
 
@@ -132,8 +137,10 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-right">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
-                  <a href="https://querybuilder.vercel.app/" data-lightbox="example-1">
-                    <img src={config.getAssetPath('assets/images/portfolio.querybuilder.screenshot.1.png')} alt="Query Builder" />
+                  <a href="https://querybuilder.vercel.app/" data-lightbox="example-1" loading="lazy">  
+                    <img src={config.getAssetPath('assets/images/portfolio.querybuilder.screenshot.1.png')} alt="Query Builder" 
+                    loading="lazy"
+                    />
                   </a>
 
                   {/* <img src="../assets/images/portfolio2.jpg" alt="Portfolio" /> */}
@@ -160,12 +167,14 @@ export default function Portfolio() {
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a
-                    href="../assets/images/portfolio3.jpg"
+                    href={config.getAssetPath('assets/images/portfolio3.jpg')}
                     data-lightbox="example-1"
+                    loading="lazy"
                   >
                     <img
-                      src="../assets/images/portfolio3.jpg"
+                      src={config.getAssetPath('assets/images/portfolio3.jpg')}
                       alt="Portfolio"
+                      loading="lazy"
                     />
                   </a>
 
@@ -191,10 +200,13 @@ export default function Portfolio() {
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a
-                    href="https://greaterbostonsnowremoval.com"
+                    href={config.getAssetPath('assets/images/portfolio.GBSnow.1.png')}
+                    loading="lazy"
                     data-lightbox="example-1"
                   >
-                    <img src={config.getAssetPath('assets/images/portfolio.GBSnow.1.png')} alt="portfolio" />
+                    <img src={config.getAssetPath('assets/images/portfolio.GBSnow.1.png')} 
+                    alt="portfolio" 
+                    loading="lazy"/>
                   </a>
 
                   <ul className="portfolio-categories">
@@ -224,7 +236,9 @@ export default function Portfolio() {
                     href="../assets/images/portfolio5.jpg"
                     data-lightbox="example-1"
                   > */}
-                  <img src={config.getAssetPath('assets/images/portfolio.tableaucleaner.screenshot.png')} alt="portfolio" />
+                  <img src={config.getAssetPath('assets/images/portfolio.tableaucleaner.screenshot.png')} 
+                  alt="portfolio" 
+                  loading="lazy"/>
                   {/* </a> */}
 
                   <ul className="portfolio-categories">

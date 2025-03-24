@@ -18,7 +18,7 @@ export class Video extends Component {
         style={{ opacity: 0.1 }}
         ref={(ref) => (this.videoRef = ref)}
       >
-        <source src={this.props.video} type="video/mp4" />
+        <source src={this.props.video} type="video/mp4" loading="lazy" />
       </video>
     );
   }
