@@ -1,6 +1,5 @@
 import React from 'react';
 import { config } from '../../config';
-import LazyImage from './LazyImage';
 import { personalData } from '../../data/personalData';
 
 export default function Lsb() {
@@ -10,7 +9,7 @@ export default function Lsb() {
         <h1>{personalData.name}</h1>
         <span className="designation">{personalData.designation}</span>
       </div>
-      <LazyImage 
+      <img
         className="me" 
         src={personalData.profileImage} 
         alt={personalData.name} 

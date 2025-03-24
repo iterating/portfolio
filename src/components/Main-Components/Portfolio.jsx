@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LazyImage from '../Global-content/LazyImage';
 import { config } from '../../config';
 import { portfolioData } from '../../data/portfolioData';
 // import Lightbox from 'lightbox2';
