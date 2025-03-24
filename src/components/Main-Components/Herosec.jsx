@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { config } from '../../config';
 
 export default function Herosec() {
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function Herosec() {
             className="go-to-project-btn scroll-to scroll-animation"
             data-aos="fade-up"
           >
-            <img src="../assets/images/round-text.png" alt="Rounded Text" />
+            <img src={config.getAssetPath('assets/images/round-text.png')} alt="Rounded Text" />
             <i className="las la-arrow-down"></i>
           </a>
           {/* <div className="facts d-flex">

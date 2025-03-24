@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { config } from '../../config';
 // import Lightbox from 'lightbox2';
 // import 'lightbox2/dist/css/lightbox.min.css';
 // import 'lightbox2/dist/js/lightbox.js';
@@ -40,7 +41,7 @@ export default function Portfolio() {
                     data-lightbox="example-1"
                   >
                     <img
-                      src="../assets/images/portfolio.FilmLab.kiosk.png"
+                      src={config.getAssetPath('assets/images/portfolio.FilmLab.kiosk.png')}
                       alt="LA Film Lab Ordering System"
                     />
                   </a>
@@ -73,7 +74,7 @@ export default function Portfolio() {
             <div className="portfolio-item-inner">
             <a href="https://sirscalc.vercel.app/" data-lightbox="example-1">
                     <img
-                      src="../assets/images/portfolio.medicalc.screenshot.clean.png"
+                      src={config.getAssetPath('assets/images/portfolio.medicalc.screenshot.clean.png')}
                       alt="Medical Decision Tools"
                     />
                   </a>
@@ -102,10 +103,8 @@ export default function Portfolio() {
             <div className="col-md-12 scroll-animation" data-aos="fade-right">
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
-                  <a href="../assets/images/portfolio.placenotes.checklist.jpg"
-                    data-lightbox="example-1"
-                  >
-                  <img src="../assets/images/portfolio.placenotes.checklist.jpg" alt="Placenotes"  />
+                  <a href={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} data-lightbox="example-1">
+                  <img src={config.getAssetPath('assets/images/portfolio.placenotes.checklist.jpg')} alt="Placenotes"  />
                   </a>
 
 
@@ -134,7 +133,7 @@ export default function Portfolio() {
               <div className="portfolio-item portfolio-half">
                 <div className="portfolio-item-inner">
                   <a href="https://querybuilder.vercel.app/" data-lightbox="example-1">
-                    <img src="../assets/images/portfolio.querybuilder.screenshot.1.png" alt="Query Builder" />
+                    <img src={config.getAssetPath('assets/images/portfolio.querybuilder.screenshot.1.png')} alt="Query Builder" />
                   </a>
 
                   {/* <img src="../assets/images/portfolio2.jpg" alt="Portfolio" /> */}
@@ -195,7 +194,7 @@ export default function Portfolio() {
                     href="https://greaterbostonsnowremoval.com"
                     data-lightbox="example-1"
                   >
-                    <img src="./assets/images/portfolio.GBSnow.1.png" alt="portfolio" />
+                    <img src={config.getAssetPath('assets/images/portfolio.GBSnow.1.png')} alt="portfolio" />
                   </a>
 
                   <ul className="portfolio-categories">
@@ -225,7 +224,7 @@ export default function Portfolio() {
                     href="../assets/images/portfolio5.jpg"
                     data-lightbox="example-1"
                   > */}
-                  <img src="../assets/images/portfoio.tableaucleaner.screenshot.png" alt="portfolio" />
+                  <img src={config.getAssetPath('assets/images/portfoio.tableaucleaner.screenshot.png')} alt="portfolio" />
                   {/* </a> */}
 
                   <ul className="portfolio-categories">

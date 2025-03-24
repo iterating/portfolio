@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from "react";
 // import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { config } from '../../config'
 
 export default function Testimonials() {
     
@@ -42,7 +43,7 @@ export default function Testimonials() {
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-1.jpg" alt="portfolio"/>
+                                        <img src={config.getAssetPath('assets/images/testimonial-1.jpg')} alt="portfolio"/>
                                         <div className="right">
                                             <h3>Paublo Dybala</h3>
                                             <p className="designation">CEO of <span>IBM Global</span></p>
@@ -59,7 +60,7 @@ export default function Testimonials() {
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-2.jpg" alt="portfolio"/>
+                                        <img src={config.getAssetPath('assets/images/testimonial-2.jpg')} alt="portfolio"/>
                                         <div className="right">
                                             <h3>Christina Morillo</h3>
                                             <p className="designation">Product Management of <span>Invision App Inc</span></p>
@@ -76,7 +77,7 @@ export default function Testimonials() {
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-3.jpg" alt="portfolio"/>
+                                        <img src={config.getAssetPath('assets/images/testimonial-3.jpg')} alt="portfolio"/>
                                         <div className="right">
                                             <h3>Phil Foden</h3>
                                             <p className="designation">Director of <span>Envato LLC</span></p>
