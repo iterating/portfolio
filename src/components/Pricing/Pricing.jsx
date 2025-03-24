@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { pricingData } from '../../data/pricingData'
+import { pricingData } from './pricingData.js'
 
 export default function Pricing() {
     useEffect(()=>{

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { resumeData } from '../../data/resumeData';
+import { resumeData } from './resumeData';
 
 export default function Resume() {
   useEffect(() => {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { config } from '../../config';
-import { personalData } from '../../data/personalData';
+import { personalData } from '../About/personalData';
 
-export default function Lsb() {
+export default function LSidebar() {
   return (
     <div className="left-sidebar">
       <div className="sidebar-header d-flex align-items-center justify-content-between">
-        <h1>{personalData.name}</h1>
+        <h3>{personalData.name}</h3>
         <span className="designation">{personalData.designation}</span>
       </div>
       <img

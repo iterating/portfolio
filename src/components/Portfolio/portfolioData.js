@@ -21,7 +21,7 @@ export const portfolioData = {
       id: 2,
       title: "Medical Decision Tools",
       link: "https://sirscalc.vercel.app/",
-      image: "assets/images/portfolio.medicalc.screenshot.clean.png",
+      image: "assets/images/portfolio.sirscalc.gif",
       type: "portfolio-half",
       animation: "fade-up",
       categories: ["Python", "Flask", "React", "RESTful APIs"]
@@ -39,7 +39,7 @@ export const portfolioData = {
       id: 4,
       title: "Query Builder",
       link: "https://querybuilder.vercel.app/",
-      image: "assets/images/portfolio.querybuilder.screenshot.1.png",
+      image: "assets/images/portfolio.querybuilder.gif",
       type: "portfolio-half",
       animation: "fade-right",
       categories: ["React", "MySQL / MongoDB / PostgresSQL", "NodeJS"]

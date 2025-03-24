@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { config } from '../../config';
-import { portfolioData } from '../../data/portfolioData';
+import { portfolioData } from './portfolioData';
 // import Lightbox from 'lightbox2';
 // import 'lightbox2/dist/css/lightbox.min.css';
 // import 'lightbox2/dist/js/lightbox.js';

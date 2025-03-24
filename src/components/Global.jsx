@@ -3,7 +3,7 @@ import Video from './Global-content/Video';
 import Pageloader from './Global-content/Pageloader';
 import Rsidemenu from './Global-content/Rsidemenu';
 import Scrollnav from './Global-content/Scrollnav';
-import Lsb from './Global-content/Lsb';
+import LSidebar from './Global-content/LSidebar';
 import Settings from './Global-content/Settings';
 import MainWrapper from './MainWrapper';
 
@@ -22,7 +22,7 @@ export default function Global() {
       <Settings clickEvent={changeVideo} />
 
       {/* Left Side Bar and it will get executed on large devices*/}
-      <Lsb />
+      <LSidebar />
 
       {/*when user interacts with the hamburger menu it display the inner-components*/}
       <Rsidemenu />

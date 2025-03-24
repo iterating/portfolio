@@ -13,17 +13,13 @@ export const personalData = {
   socialProfiles: [
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/jonathan-young-a571a2223/",
+      url: "https://www.linkedin.com/in/iterating/",
       icon: "lab la-linkedin-in"
     },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/JonYoung_Dev",
-      icon: "lab la-twitter"
-    },
+
     {
       name: "GitHub",
-      url: "https://github.com/Jyoung-Research",
+      url: "https://github.com/iterating",
       icon: "lab la-github"
     },
     {

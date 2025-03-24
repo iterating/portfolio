@@ -5,7 +5,7 @@ import React, { useRef, useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { config } from '../../config'
-import { testimonialsData } from '../../data/testimonialsData';
+import { testimonialsData } from './testimonialsData';
 
 export default function Testimonials() {
     

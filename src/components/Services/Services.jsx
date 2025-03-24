@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { servicesData } from '../../data/servicesData'
+import { servicesData } from './servicesData'
 
-export default function Service() {
+export default function Services() {
     useEffect(()=>{
         AOS.init({duration:1000})
     },[])
