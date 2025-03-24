@@ -1,4 +1,5 @@
 import React from 'react';
+import { config } from '../../config';
 
 export default function Lsb() {
   return (
@@ -7,7 +8,7 @@ export default function Lsb() {
         <h1>Jonathan Young</h1>
         <span className="designation">Full Stack Engineer & Web Developer</span>
       </div>
-      <img className="me" src="../public/assets/images/profile.professional.portrait.jpg" alt="Jonathan Young" />
+      <img className="me" src={config.getAssetPath('assets/images/profile.professional.portrait.jpg')} alt="Jonathan Young" />
       <h2 className="email">jyoung0696@gmail.com</h2>
       <h2 className="address"></h2>
       <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
