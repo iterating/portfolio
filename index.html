@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <!-- Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,33 +13,17 @@
    />
 
    <!-- ICONS -->
-   <!-- <link rel="apple-touch-icon" href="./assets/images/favicon.png" />
-   <link rel="icon" href="./assets/images/favicon.png" /> -->
-   <link
-     rel="apple-touch-icon"
-     sizes="180x180"
-     href="./assets/images/apple-touch-icon.png"
-   />
-   <link
-     rel="icon"
-     type="image/png"
-     sizes="32x32"
-     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABFlJREFUWEftV21QVFUYfu7de2HZZXeRnEGU+ChjzHGj2dLECWPC1AGHZjCxMvsyHCdzhulPZWJNNUxTUdOkM5b8AdMxKHLyg0QEipGJbIPSiUZSQkwQqYXl7uf9as65sOvdXegf9IPzb88573mf9znP+5y9DN5U2ay00d0q1J0AFmBmxhADZn/ftaRKJqvatUeF+vbM5NVnYcBUMJnV/wzOYOWRdQ4RAOpsVD+Zcw7AHAOUgeI749Dzt4zeUTlKjwXpPNZnxuGSS0b1RT/UCcmmmFiQOPt8A1gGuDgi4/OeAARxak3b53NYk84jw8rCKwFVP/lAAbRtstHJG14V3cMSTTYwriA5gcGryxNCoMrbPDh+JYi9K014ckk8eFaPl4DYeMKNYEQdtxlZVD5owtoMXhdQ5fRrANo325CWGHFajN78wOnD/m4/atZZsDqNi9m9r5/z4sjvgdDaQjOLo0UW3G6JPv/ghYAG4I1cE55dGj+tHZCqCr924/KYjPtTONRvsMTc3zko4fFT43TNaAAaiq24O9kQc+/eDq8GgFC5bZkRhVlxuMPGwswzUQFdwzJKjrvpfLqFxXeltpiHBhXAXuui1/DaigRstxunLGzzyXENQOSOOAPwfp6ZimxynLgiYlerQH8+ksHjszWJoTVFBW54FaSaNZoJUx5RRfNjtpBOro4rFPjkIElzakdjAyCbvi+16e7t01/9ePe8j8bvuteIl+8Li7PXJaPrpozSbA3wzhYPVi3ksGWJdq0/DknouC6i3BGO6XcryK8fiw0g2cjCuUVPcUWHl7YZGfseNqMoK8xOQ28Qwz4FO+7R6P64y48yezxMHANSafExN3bkGHUxjX+KePGsEBtA3iIetevDFJNDn28S0Dog0gRNJVbcNS8srHc6fdQfKlZqFQZkIH5iue2aiOdOCzhdYkX2LTFVTh/2dU+0YaQGyuxG7F4Rpousr/3KTY2KY4Hfnpmn84CnvxVg4hkcKDBHCW57swctA0H0RMS8cEbA2auixgBxtYfSePS5ZZwfkmhyAmJyiAqwbELZmVYDWjdZdYny6ty05c5s1M8TIToOjyLVbEBbREx+nRv94zKY/Lox9dijFtjitNY71BPAhREZ7+WZQknOXZfwVKPW2w+kcjhaqPeApTWjCMoqftmapGvhlgER25qEKWN8kgrmI6dPLXfoe5UYxFurwgDKmgU092v3v3oRj5oIfTgOj8HlV3CgIBHrMsN2+6HTh0+6/dPGMJWdXpUYxq2DKHfSik72BfFSiye0vDjJEEX1E6cE/DAoUof8oshCHyevpGJro4CfhyVMF8PkHHKpX26wYnFStFfXXwpiT4cn6nE5UmhBbqr2FkgK8Eq7Fw1/aC3qSOGQYWHR/peEEZ8SAj5VDBVhAsegNDseyxdwMHNAn1vBN5eD6L4pRamaTBDrzk3lYeQY+noSD/ivMVXM3D+iOQb+FwzM7qfZrH+czvbn+b+PWvM8xuC7hAAAAABJRU5ErkJggg=="
-   />
-   <link
-     rel="icon"
-     type="image/png"
-     sizes="16x16"
-     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAfZJREFUOE+tk0loU1EUhr+Xl6SZ2mJiNy5qI4IptQ6tuAiiC6suakEXzlRwQNwIKqKIIEIVBBcVl7EiRQoiQihqpXUTItZk0y4qurGtQ6pFMM1E8qa8q3lqS5dtvJsL/z3n/P/57zlSU9/cdRDXACdLOxpIt6SmvrS6jOR/VFqlgFga8eLo6gucGsmLTQ12xn8Y/FQEl9rdxGd0Xn3WObfZxfqATOK7wY1EESHAYYPTrS72rHaSnDWQzscKoneHd5GuZ1Majz6oPOmsncdPjBSIp3QiHT52NjosfPSbgRR8kBa7Gp2E/Da6m12sdEtciBVJzuqMHq63ArUy9L9X+JI36Ql7UMtQI1cwlXkPKtImjq+wHg6+yON1SDzc7bOS5hRBWjEJ+WWmsiY+B2xssHP5dXGhQLNfZmh/ncUYfpyla42Tq1vdDH/SsUlYsiv3sZcFIh1ei6BrMId0cjgv9q11Ek8Z3NnuIaMK2gYy3Ax7OBqqITKhYgrB2Q0uy+TOaI7EkT+ttfRnkN7M6CK8ys50ziRYZ6N3rMS9cYXb27wcWue0zByc1Hi6t5ahaY2eZIm3f71pH8giHXieE1e2ePD+7iv6UeP+O8X6rpaAzJlWF7GvBtFJlWC9TCpfRjfhYpubgNvG3bHSggfLncbqJ/E/LFN16/wLH9PSHNmJG4QAAAAASUVORK5CYII="
-   />
+   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAySURBVFhH7c6xAQAgCMTAx/13Bgt3oPDSpL3qWxY772sBAAAAAAAAAAAAAAAAAPwOSAZNiAQ82P7MAwAAAABJRU5ErkJggg==" />
+   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAgSURBVDhPY/wPBAwUACYoTTYYNWDUABAYNWDgDWBgAABrygQclUTopgAAAABJRU5ErkJggg==" />
    <link
      rel="stylesheet"
      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
    />
    <!-- ICONS -->
     <title>Jonathan Young</title>
-    <script type="module" crossorigin src="/jy-portfolio/assets/index.28f3b8b6.js"></script>
-    <link rel="stylesheet" href="/jy-portfolio/assets/index.8b93b71f.css">
+    <script type="module" crossorigin src="/jy-portfolio/assets/index.4fdeb5d5.js"></script>
+    <link rel="stylesheet" href="/jy-portfolio/assets/index.de427c69.css">
   </head>
   <body>
     <div id="root"></div>
