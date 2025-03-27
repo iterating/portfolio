@@ -15,43 +15,43 @@ export const portfolioData = {
       image: "assets/images/portfolio.FilmLab.kiosk.png",
       type: "portfolio-full",
       animation: "fade-up",
-      categories: ["NodeJS", "Nuxt/Vue.js", "Typescript", "PostgresSQL"]
+      categories: ["NodeJS", "Nuxt/Vue.js", "Typescript", "Webhooks","PostgresSQL"]
     },
     {
       id: 2,
+      title: "Greater Boston Snow Removal Business Platform",
+      link: "https://greaterbostonsnowremoval.com",
+      image: "assets/images/portfolio.gbsm.map.gif",
+      type: "portfolio-half",
+      animation: "fade-up",
+      categories: ["Typescript", "NodeJS", "Microservices Architecture", "AWS"]
+    },
+    {
+      id: 3,
       title: "Medical Decision Tools",
       link: "https://sirscalc.vercel.app/",
       image: "assets/images/portfolio.sirscalc.gif",
       type: "portfolio-half",
-      animation: "fade-up",
-      categories: ["Python", "Flask", "React", "RESTful APIs"]
+      animation: "fade-right",
+      categories: ["Python", "Flask", "React", "REST APIs"]
     },
     {
-      id: 3,
+      id: 4,
       title: "Placenotes Location First Social Platform",
       link: "https://placenotes.vercel.app/",
       image: "assets/images/portfolio.placenotes.checklist.jpg",
       type: "portfolio-half",
       animation: "fade-right",
-      categories: ["React Native", "Redux", "GraphQL", "MongoDB"]
+      categories: ["React", "GraphQL", "MongoDB", "JWT Auth", "AWS"]
     },
     {
-      id: 4,
+      id: 5,
       title: "Query Builder",
       link: "https://querybuilder.vercel.app/",
       image: "assets/images/portfolio.querybuilder.gif",
       type: "portfolio-half",
-      animation: "fade-right",
-      categories: ["React", "MySQL / MongoDB / PostgresSQL", "NodeJS"]
-    },
-    {
-      id: 5,
-      title: "Greater Boston Snow Removal Business Platform",
-      link: "https://greaterbostonsnowremoval.com",
-      image: "assets/images/portfolio.GBSnow.1.png",
-      type: "portfolio-half",
       animation: "fade-up",
-      categories: ["Typescript", "NodeJS", "Microservices Architecture"]
+      categories: ["React", "MySQL / MongoDB / PostgresSQL", "NodeJS"]
     },
     {
       id: 6,
@@ -59,8 +59,8 @@ export const portfolioData = {
       link: "https://tableaucleaner.com",
       image: "assets/images/portfolio.tableaucleaner.screenshot.png",
       type: "portfolio-half",
-      animation: "fade-up",
-      categories: ["React", "NodeJS"]
+      animation: "fade-left",
+      categories: ["React", "Typescript", "NodeJS", "ETL Pipeline"]
     }
   ]
 };

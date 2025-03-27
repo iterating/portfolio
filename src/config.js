@@ -10,8 +10,8 @@ const isDev = typeof window !== 'undefined' && window.location.hostname === 'loc
  * Central configuration object for the application
  */
 export const config = {
-  // Base path for assets - empty in development, '/portfolio' in production
-  basePath: isDev ? '' : '/portfolio',
+  // Base path for assets - empty in development, '' in production to deploy to github pages root ('/portfolio' to deploy to portfolio repo)
+  basePath: isDev ? '' : '',
   
   /**
    * Helper function to get the correct path for assets
