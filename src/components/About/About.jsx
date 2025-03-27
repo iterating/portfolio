@@ -16,10 +16,10 @@ export default function About() {
             </h4>
 
           </div>
-          <p className="scroll-animation" data-aos="fade-up">
+          <p className="scroll-animation" data-aos="fade-up" style={{  }}>
             With experience spanning microservice architecture, component-driven design, and full-stack development, I bring a methodical approach to every project. 
           </p>
-          <p className="scroll-animation" data-aos="fade-up">
+          <p className="scroll-animation" data-aos="fade-up" style={{  }}>
             My technical toolkit includes TypeScript, Python, GraphQL, React, and LangChain, among many others. But beyond the technologies, I bring a unique perspective that combines analytical rigor, creative problem-solving, and a genuine passion for building tools that make a difference.
           </p>
         </div>

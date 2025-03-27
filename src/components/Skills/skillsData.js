@@ -1,15 +1,9 @@
 // Skills data for the Skills component
 export const skillsData = [
   {
-    name: "JavaScript",
+    name: "JavaScript/Typescript",
     percent: "92%",
     icon: "lab la-js",
-    animation: 'fade-right'
-  },
-  {
-    name: "Typescript",
-    percent: "92%",
-    icon: "las la-code",
     animation: 'fade-right'
   },
   {
@@ -28,12 +22,6 @@ export const skillsData = [
     name: "NumPy",
     percent: "92%",
     icon: "las la-calculator",
-    animation: 'fade-right'
-  },
-  {
-    name: "Pandas",
-    percent: "92%",
-    icon: "las la-table",
     animation: 'fade-right'
   },
   {

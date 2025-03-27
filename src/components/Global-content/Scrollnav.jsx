@@ -15,6 +15,11 @@ export default function Scrollnav() {
         </a>
       </li>
       <li>
+        <a className="scroll-to" href="#websites">
+          <span>Websites</span> <i className="las la-globe"></i>
+        </a>
+      </li>
+      <li>
         <a className="scroll-to" href="#about">
           <span>About</span> <i className="lar la-user"></i>
         </a>

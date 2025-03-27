@@ -27,6 +27,29 @@ export default function Rsidemenu() {
                   <i className="las la-home"></i> <span>Home</span>
                 </a>
               </li>
+
+              <li>
+                <a
+                  className="scroll-to"
+                  href="#portfolio"
+                  onClick={removeActive}
+                >
+                  <i className="las la-grip-vertical"></i>{' '}
+                  <span>Portfolio</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  className="scroll-to"
+                  href="#websites"
+                  onClick={removeActive}
+                >
+                  <i className="las la-globe"></i>{' '}
+                  <span>Websites</span>
+                </a>
+              </li>
+
               <li>
                 <a className="scroll-to" href="#about" onClick={removeActive}>
                   <i className="lar la-user"></i> <span>About</span>
@@ -47,16 +70,6 @@ export default function Rsidemenu() {
                   <i className="las la-shapes"></i> <span>Skills</span>
                 </a>
               </li> */}
-              <li>
-                <a
-                  className="scroll-to"
-                  href="#portfolio"
-                  onClick={removeActive}
-                >
-                  <i className="las la-grip-vertical"></i>{' '}
-                  <span>Portfolio</span>
-                </a>
-              </li>
               {/* <li>
                 <a
                   className="scroll-to"

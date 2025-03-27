@@ -27,7 +27,6 @@ export const resumeData = {
         company: "Greater Boston Snow Removal, Boston MA",
         accomplishments: [
           "Architected and implemented scalable microservices platform that transformed company into Boston's market leader",
-          "Designed event-driven microservices architecture using TypeScript and Node.js, achieving 99.9% uptime",
           "Built location-based worker matching system using Google Cloud API and MongoDB geospatial indexing",
           "Implemented robust security infrastructure with JWT-based authentication and role-based access control"
         ]
@@ -38,10 +37,7 @@ export const resumeData = {
         title: "Operations Manager",
         company: "Greater Boston Snow Removal, Boston MA",
         accomplishments: [
-          "Led operations transformation resulting in 500% revenue growth while maintaining 100% client retention",
-          "Managed 6-person team and implemented route optimization system",
-          "Leveraged Excel and Tableau to create comprehensive dashboards for KPI tracking",
-          "Developed custom analytics tools to track team performance and route efficiency"
+        ""
         ]
       },
       {
@@ -51,9 +47,7 @@ export const resumeData = {
         company: "Vecna Healthcare, Burlington MA",
         accomplishments: [
           "Developed EMR user interfaces that reduced clinical documentation time by 35%",
-          "Spearheaded UI/UX improvements that increased user satisfaction by 40%",
           "Reduced system deployment time by 60% through automation with Ansible",
-          "Maintained 99.9% uptime for critical healthcare systems"
         ]
       },
       {
@@ -62,7 +56,7 @@ export const resumeData = {
         title: "Research Assistant in Vaccine Immunology",
         company: "Vaccine Immunotherapy Center, Massachusetts General Hospital, Boston MA",
         accomplishments: [
-          "Performed groundbreaking transplant immunology research",
+          "Performed cutting edge transplant immunology research",
           "Utilized Python to perform statistical analyses of data from in-vitro and microarray experiments",
           "Programmed 'Cellbot', an automated cell counting program in Java and ImageJ",
           "Published in American Journal of Transplantation"
@@ -77,10 +71,9 @@ export const resumeData = {
         id: 1,
         date: "2024",
         institution: "Per Scholas",
-        degree: "Software Engineering Track, GPA: 4.0",
+        degree: "Software Engineering Immersive",
         accomplishments: [
-          "Completed intensive training in enterprise software development practices and Agile methodologies",
-          "Achieved top performance (4.0 GPA) while applying existing development experience to new projects"
+          "Completed intensive training in enterprise software development practices and Agile methodologies, achieving top performance (4.0 GPA)"
         ]
       },
       {
@@ -91,7 +84,6 @@ export const resumeData = {
         accomplishments: [
           "Won American College of Physicians National Abstract Competition",
           "Published in ACP Impact and presented at Digestive Disease Interventions",
-          "Applied statistical analysis and diagnostic frameworks to complex problem-solving"
         ]
       },
       {
@@ -112,8 +104,7 @@ export const resumeData = {
         degree: "",
         accomplishments: [
           "American Invitational Mathematics Examination (AIME) Qualifier",
-          "Recognized for exceptional analytical skills and mathematical modeling",
-          "Demonstrated advanced problem-solving capabilities"
+          "Recognized for exceptional problem-solving  skills"
         ]
       }
     ]
@@ -136,7 +127,7 @@ export const resumeData = {
     ]
   },
   projectsSection: {
-    sectionHeading: "Projects",
+    // sectionHeading: "Projects",
     projects: [
       {
         id: 1,

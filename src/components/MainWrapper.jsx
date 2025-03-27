@@ -6,6 +6,7 @@ import Resume from './Resume/Resume';
 import Services from './Services/Services';
 import Skills from './Skills/Skills';
 import Portfolio from './Portfolio/Portfolio';
+import Webdental from './Webdental/Webdental';
 import Testimonials from './Testimonials/Testimonials';
 import Clientlogos from './Clientlogos/Clientlogos';
 import Pricing from './Pricing/Pricing';
@@ -20,6 +21,7 @@ export default function Main() {
           <LSidebar /> {/* this component will used by mobile devices */}
           <Herosec />
           <Portfolio />
+          <Webdental />
           <About />
           <Resume />
           {/* <Services/> */}

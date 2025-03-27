@@ -13,7 +13,7 @@ export const portfolioData = {
       title: "LA Film Lab Ordering System",
       link: "https://lafilmlab.com",
       image: "assets/images/portfolio.FilmLab.kiosk.png",
-      type: "portfolio-full",
+      type: "portfolio-half",
       animation: "fade-up",
       categories: ["NodeJS", "Nuxt/Vue.js", "Typescript", "Webhooks","PostgresSQL"]
     },
@@ -22,7 +22,7 @@ export const portfolioData = {
       title: "Greater Boston Snow Removal Business Platform",
       link: "https://greaterbostonsnowremoval.com",
       image: "assets/images/portfolio.gbsm.map.gif",
-      type: "portfolio-half",
+      type: "portfolio-full",
       animation: "fade-up",
       categories: ["Typescript", "NodeJS", "Microservices Architecture", "AWS"]
     },
@@ -31,7 +31,7 @@ export const portfolioData = {
       title: "Medical Decision Tools",
       link: "https://sirscalc.vercel.app/",
       image: "assets/images/portfolio.sirscalc.gif",
-      type: "portfolio-half",
+      type: "portfolio-full",
       animation: "fade-right",
       categories: ["Python", "Flask", "React", "REST APIs"]
     },
@@ -40,7 +40,7 @@ export const portfolioData = {
       title: "Placenotes Location First Social Platform",
       link: "https://placenotes.vercel.app/",
       image: "assets/images/portfolio.placenotes.checklist.jpg",
-      type: "portfolio-half",
+      type: "portfolio-full",
       animation: "fade-right",
       categories: ["React", "GraphQL", "MongoDB", "JWT Auth", "AWS"]
     },
@@ -49,7 +49,7 @@ export const portfolioData = {
       title: "Query Builder",
       link: "https://querybuilder.vercel.app/",
       image: "assets/images/portfolio.querybuilder.gif",
-      type: "portfolio-half",
+      type: "portfolio-full",
       animation: "fade-up",
       categories: ["React", "MySQL / MongoDB / PostgresSQL", "NodeJS"]
     },
@@ -58,7 +58,7 @@ export const portfolioData = {
       title: "Tableau Data Cleaner",
       link: "https://tableaucleaner.com",
       image: "assets/images/portfolio.tableaucleaner.screenshot.png",
-      type: "portfolio-half",
+      type: "portfolio-full",
       animation: "fade-left",
       categories: ["React", "Typescript", "NodeJS", "ETL Pipeline"]
     }

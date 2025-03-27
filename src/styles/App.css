@@ -966,7 +966,7 @@ body .body-overlay {
 }
 .portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
   height: auto;
-  max-height: 600px;
+  max-height: 500px;
 }
 .portfolio-items .portfolio-item .portfolio-item-inner img {
   display: block;

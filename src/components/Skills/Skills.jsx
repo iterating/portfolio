@@ -24,7 +24,7 @@ export default function Skills() {
                             <div key={index} className="col-md-3 scroll-animation" data-aos={skill.animation}>
                                 <div className="skill">
                                     <div className="skill-inner">
-                                        <i className={`${skill.icon}`} style={{ fontSize: '30px', height: '30px', width: '30px' }}></i>
+                                        <i className={`${skill.icon}`} style={{ fontSize: '50px', height: '10px', width: '50px' }}></i>
                                     </div>
                                     <p className="name">{skill.name}</p>
                                 </div>
